@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_compiler/utility/alltext.dart';
 import 'package:online_compiler/utility/colors/colors.dart';
+import 'package:online_compiler/view/screen/userview/widgets/messegefields.dart';
+import 'package:online_compiler/view/screen/userview/widgets/usermesseges.dart';
 import 'package:sizer/sizer.dart';
 
 class userchatview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: blu,
       appBar: AppBar(
         toolbarHeight: 8.h,
         title: alltext(
@@ -64,16 +67,10 @@ class userchatview extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: 80.h,
-              color: blu,
-              width: 100.w,
-            ),
-            Container(
-              height: 9.h,
-              color: re,
-              width: 100.w,
-            )
+            usermesseges(),
+          
+            messegefields(context)
+           
           ],
         ),
       ),

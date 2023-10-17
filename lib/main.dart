@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:online_compiler/function/function.dart';
 import 'package:online_compiler/view/screen/homescreen/home.dart';
 import 'package:sizer/sizer.dart';
 
@@ -7,6 +8,8 @@ void main() {
   runApp(const MyApp());
 }
 
+ // ignore: non_constant_identifier_names
+ final crd_controll = Get.put(cruddata());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
